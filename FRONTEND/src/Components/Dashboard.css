@@ -1,0 +1,146 @@
+.body{
+    background-color: #e7ddee ;
+}
+.ins{
+    background-color: #ffe26a;
+    color: black;
+    box-shadow:
+    0 0 0 10px rgba(255,255,255,255),
+    0 0 20px rgba(0,0,0,.1),
+    0 0 30px rgba(0,0,0,.1),
+    0 0 40px rgba(0,0,0,.1),
+    0 0 50px rgba(0,0,0,.1),
+    0 0 75px rgba(0,0,0,.1),
+    0 0 100px rgba(0,0,0,.1),
+    0 0 150px rgba(0,0,0,.1);
+  transform: translateZ(-25px);
+  transition: all 0.3s ease;
+}
+.main{
+    background-color: #ffe26a;
+    color: black;
+    box-shadow:
+    0 0 0 10px rgba(255,255,255,255),
+    0 0 20px rgba(0,0,0,.1),
+    0 0 30px rgba(0,0,0,.1),
+    0 0 40px rgba(0,0,0,.1),
+    0 0 50px rgba(0,0,0,.1),
+    0 0 75px rgba(0,0,0,.1),
+    0 0 100px rgba(0,0,0,.1),
+    0 0 150px rgba(0,0,0,.1);
+  transform: translateZ(-25px);
+  transition: all 0.3s ease;
+}
+.main:hover {
+    transform: rotateX(5deg) rotateY(5deg) translateZ(-15px);
+    color: white;
+    background-color: #16123f;
+    box-shadow:
+      0 0 0 10px  #ffe26a,
+      0 0 20px rgba(0,0,0,.1),
+      0 0 30px rgba(0,0,0,.2),
+      0 0 40px rgba(0,0,0,.3),
+      0 0 50px rgba(0,0,0,.4),
+      0 0 75px rgba(0,0,0,.5),
+      0 0 100px rgba(0,0,0,.6),
+      0 0 150px rgba(0,0,0,.7);
+  }
+.card-body{
+    background-color: #75c9b7;
+    
+}
+.card-title{
+    color: lightcyan;
+    color: black;
+}
+
+.card-subtitle{
+    color: black;
+}
+.card-text{
+    color: black;
+}
+
+  .card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+  }
+  
+  .card:hover {
+    transform: rotateY(10deg);
+    box-shadow: 0 20px 30px rgba(220, 220, 219, 0.3);
+  }
+  
+  @keyframes border-glow {
+    from {
+      box-shadow: 0 0 0 0 rgba(245, 243, 243, 0.3);
+    }
+    to {
+      box-shadow: 0 0 0 30px rgba(232, 231, 226, 0);
+    }
+  }
+  
+  .card:hover::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    left: -10px;
+    background-color: transparent;
+    z-index: -1;
+    animation: border-glow 0.8s ease-out infinite alternate;
+  }
+  .card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: rotateY(10deg);
+    box-shadow: 0 0 3px #9266b2;
+    border: 4px solid rgb(232, 226, 223);
+  }
+  
+  .card::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    border: 5px solid transparent;
+    transform: translateZ(-1px);
+  }
+  
+  .card::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    border: 5px solid transparent;
+    transform: translateZ(-1px);
+    filter: blur(8px);
+  }
+  .btn-delete {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-delete:hover {
+    background-color: #e21212;
+  }
+  
+  .btn-delete:active {
+    background-color: #777;
+  }
+  
